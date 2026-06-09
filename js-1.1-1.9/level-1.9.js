@@ -17,3 +17,6 @@ console.log(strings1);
 //  console.log(num + num*0.1);
 //}
 
+let arr = [10, 20, 30, 40, 50,];
+arr = arr.map(item => item * 1.1);
+console.log(arr);
