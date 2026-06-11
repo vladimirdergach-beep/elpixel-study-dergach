@@ -95,3 +95,29 @@ function getDivisorsArray(arr) {
 }
 
 console.log(getDivisorsArray([2, 4, 3, 11]));
+
+// Задача 5
+
+  function getMaxNumbers(arr) {
+    let result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+      let max = arr[i][0];
+
+      for (let y = 0; y < arr[i].length; y++) {
+        if (arr[i][y] > max) {
+          max = arr[i][y];
+        }
+      }
+
+      result.push(max);  
+    }
+
+    return result;
+  }
+
+  console.log(getMaxNumbers([
+    [1, 5, 3],
+    [9, 2, 4],
+    [7, 8, 6]
+]));
